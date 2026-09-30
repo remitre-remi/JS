@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldne Luksusspa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Pealkirja kuldne raamikast -->
+        <div class="header-box">
+            <h1>Kuldne Luksusspa</h1>
+        </div>
+
+        <!-- Tabeli ümbris mobiilivaates kerimiseks -->
+        <div class="table-wrapper">
+            <table id="broneeringute-tabel">
+                <thead>
+                    <tr>
+                        <th data-sort="klient">
+                            Klient ↕<br>
+                            <input type="text" id="kliendi-otsing" placeholder="Otsi nime...">
+                        </th>
+                        <th data-sort="teenus">
+                            Teenus ↕<br>
+                            <select id="teenuse-filter">
+                                <option value="koik">Kõik teenused</option>
+                                <option value="juuksur">Juuksur</option>
+                                <option value="massaaž">Massaaž</option>
+                                <option value="spa">Spa</option>
+                                <option value="kosmeetika">Kosmeetika</option>
+                            </select>
+                        </th>
+                        <th data-sort="kuupäev" class="valign-bottom">Kuupäev ↕</th>
+                        <th data-sort="aeg" class="valign-bottom">Kellaaeg ↕</th>
+                    </tr>
+                </thead>
+                <tbody id="tabeli-sisu">
+                    <!-- JavaScript laeb kõik andmed otse JSON-ist -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
